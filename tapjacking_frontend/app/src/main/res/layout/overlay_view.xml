@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlayRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#80000000">
+
+    <!-- Demo UI element that could entice a tap -->
+    <LinearLayout
+        android:id="@+id/demoCard"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@drawable/ocean_surface_bg"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/demoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_demo_title"
+            android:textColor="@color/ocean_text"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/demoDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/overlay_demo_desc"
+            android:textColor="@color/ocean_text_secondary"
+            android:textSize="13sp"
+            android:paddingTop="6dp" />
+    </LinearLayout>
+
+    <!-- Close button -->
+    <TextView
+        android:id="@+id/btnCloseOverlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:layout_margin="16dp"
+        android:background="@drawable/ocean_surface_bg"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:text="@string/close_overlay"
+        android:textColor="@color/ocean_text"
+        android:contentDescription="@string/cd_close_overlay" />
+
+</FrameLayout>

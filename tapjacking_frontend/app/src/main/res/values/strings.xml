@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Tapjacking Demo</string>
+    <string name="app_title">Tapjacking Demonstration</string>
+    <string name="app_subtitle">Ocean Professional theme • Overlay permission required</string>
+
+    <string name="show_overlay">Show Overlay</string>
+    <string name="overlay_running">Overlay is currently running</string>
+    <string name="overlay_not_running">Overlay not running</string>
+
+    <string name="safe_demo_mode">Safe Demo Mode</string>
+    <string name="safe_demo_summary">When ON, overlay consumes all touches to prevent passthrough to underlying apps. When OFF, overlay allows taps to pass through to demonstrate tapjacking risk. Close button always dismisses the overlay safely.</string>
+
+    <string name="permission_status_unknown">Overlay permission status: Unknown</string>
+    <string name="permission_granted">Overlay permission granted</string>
+    <string name="permission_denied">Overlay permission NOT granted</string>
+    <string name="open_overlay_settings">Enable Overlay Permission</string>
+
+    <string name="oem_caveat">Note: Some OEMs may restrict overlays or require additional settings (e.g., Draw over other apps or Special access).</string>
+
+    <string name="overlay_demo_title">Special Offer</string>
+    <string name="overlay_demo_desc">Tap to claim</string>
+    <string name="close_overlay">Close</string>
+
+    <string name="cd_show_overlay">Show overlay</string>
+    <string name="cd_open_overlay_settings">Open overlay permission settings</string>
+    <string name="cd_close_overlay">Close overlay</string>
+    <string name="cd_safe_demo_toggle">Toggle safe demo mode</string>
+</resources>

@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Tapjacking Demo - Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; background:#f9fafb; color:#111827; margin:0; }
+    .container { max-width: 720px; margin: 40px auto; background: #fff; border:1px solid #e5e7eb; border-radius: 12px; padding: 24px; }
+    h1 { margin-top:0; color:#2563EB; }
+    a.button { display:inline-block; background:#2563EB; color:#fff; padding:10px 14px; border-radius:10px; text-decoration:none; }
+    code { background:#f3f4f6; padding:2px 6px; border-radius:6px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Tapjacking Demonstration App</h1>
+    <p>This proof-of-concept showcases overlay behavior for educational and security testing purposes.</p>
+    <h2>Quick Start</h2>
+    <ol>
+      <li>Build with <code>./gradlew :app:assembleDebug</code></li>
+      <li>Install with <code>./gradlew :app:installDebug</code></li>
+      <li>Open the app "Tapjacking Demo".</li>
+      <li>Allow the overlay permission when prompted via the button.</li>
+      <li>Tap "Show Overlay" to begin the demo.</li>
+    </ol>
+    <h2>Permission Notes</h2>
+    <p>Overlay permission can be found under Special access / Draw over other apps on many devices.</p>
+    <h2>Serve this page</h2>
+    <p>Run <code>python3 -m http.server 3000</code> in this folder and open <a href="http://localhost:3000" class="button">http://localhost:3000</a>.</p>
+  </div>
+</body>
+</html>

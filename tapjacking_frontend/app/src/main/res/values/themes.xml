@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Tapjacking.Ocean" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/ocean_primary</item>
+        <item name="android:navigationBarColor">@color/ocean_surface</item>
+        <item name="android:windowBackground">@color/ocean_background</item>
+        <item name="colorPrimary">@color/ocean_primary</item>
+        <item name="colorPrimaryVariant">@color/ocean_primary</item>
+        <item name="colorSecondary">@color/ocean_secondary</item>
+        <item name="colorError">@color/ocean_error</item>
+    </style>
+
+    <!-- Ocean button styles -->
+    <style name="Widget.Button.Ocean.Primary" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@color/ocean_primary</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+    <style name="Widget.Button.Ocean.Secondary" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:textColor">@color/ocean_primary</item>
+        <item name="strokeColor">@color/ocean_primary</item>
+        <item name="android:stateListAnimator">@null</item>
+    </style>
+
+</resources>

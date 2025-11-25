@@ -1,0 +1,141 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ocean_background"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_title"
+            android:textColor="@color/ocean_text"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:id="@+id/subtitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_subtitle"
+            android:textColor="@color/ocean_text_secondary"
+            android:textSize="14sp"
+            android:paddingBottom="24dp" />
+
+        <LinearLayout
+            android:id="@+id/surfaceCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ocean_surface_bg"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <Button
+                    android:id="@+id/btnShowOverlay"
+                    style="@style/Widget.Button.Ocean.Primary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ocean_button_bg"
+                    android:text="@string/show_overlay"
+                    android:contentDescription="@string/cd_show_overlay" />
+
+                <TextView
+                    android:id="@+id/overlayRunningText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/ocean_text_secondary"
+                    android:text="@string/overlay_not_running"
+                    android:paddingTop="8dp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#e5e7eb" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/safeDemoLabel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/safe_demo_mode"
+                    android:textColor="@color/ocean_text"
+                    android:textSize="16sp" />
+
+                <Switch
+                    android:id="@+id/switchSafeDemo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/cd_safe_demo_toggle" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/safeDemoSummary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/safe_demo_summary"
+                android:textColor="@color/ocean_text_secondary"
+                android:textSize="13sp"
+                android:paddingTop="6dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/permissionRow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/permissionStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/permission_status_unknown"
+                android:textColor="@color/ocean_text"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnGrantPermission"
+                style="@style/Widget.Button.Ocean.Secondary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ocean_button_bg"
+                android:text="@string/open_overlay_settings"
+                android:contentDescription="@string/cd_open_overlay_settings" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/oemCaveat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/oem_caveat"
+            android:textColor="@color/ocean_text_secondary"
+            android:textSize="12sp"
+            android:paddingTop="16dp" />
+
+    </LinearLayout>
+</ScrollView>
